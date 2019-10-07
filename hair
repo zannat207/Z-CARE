@@ -1,0 +1,5 @@
+function myFunction(){
+ resetForm();
+	document.getElementById("demo").style.display = "Green tea contains EGCG, an antioxidant which is great for the health of hair follicles and dermal papilla cells, contributing to lesser hair loss and thinning. Other benefits include the treatment of dandruff and psoriasis. Scaly and flaky skin on the scalp can be treated with green tea, which regulates the scalp’s protein levels, nourished, hydrates and moustirises. You can use shampoos with green tea, or even just massage a freshly brewed and cooled cup of green tea onto the hair. This magic ingredient is also good for the hair, and when used in a conditioner or as a final hair rinse, makes your hair softer, smoother, more nourished, and lesser prone to split ends.";
+	
+}

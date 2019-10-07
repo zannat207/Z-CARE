@@ -20,6 +20,7 @@
 
   <!-- Custom styles for this template -->
   <link href="css/clean-blog.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="style1.css">
 
 </head>
 
@@ -51,13 +52,19 @@
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
           </li>
+	   <li class="nav-item">
+            <a class="nav-link" href="register.html" id="login" onclick="login_func()">Sign in</a>
+          </li>
+		   <li class="nav-item">
+            <a class="nav-link" href="#" id="logout" onclick="logout_func()">Sign out</a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
 
   <!-- Page Header -->
-  <header class="masthead" style="background-image: url('img/zcare.jpg')">
+  <header class="masthead" style="background-image: url('img/home.jpg')">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
@@ -73,35 +80,38 @@
   </header>
 
   <!-- Main Content -->
-  <!--<div class="container">
+
+  <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
-        <div class="post-preview">
-          <a href="post.html">
-            <h2 class="post-title">
-              Man must explore, and this is exploration at its greatest
+	  <p><h6>Hi, welcome to Z-CARE blog! This blog is all about helping you conquer common and daily hair care & skin care problems and woes. The concept of Z-CARE is hinged on bridging you to the right products and techniques to achieve the best hair & skin possible.
+       </h6> </p>
+		<hr>
+		<div class="post-preview">
+          <a href="hairpost.html">
+          <h2 class="post-title">
+             8 Dermatologist Tips for Healthier Hair
             </h2>
             <h3 class="post-subtitle">
-              Problems look mighty small from 150 miles up
-            </h3>
+             Bad news for modern women: Many of today's common hair care practices are not great for hair follicles.
+			</h3>
           </a>
-          <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
-            on September 24, 2019</p>
+          
         </div>
         <hr>
         <div class="post-preview">
           <a href="post.html">
-            <h2 class="post-title">
-              I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
+              <h2 class="post-title">
+              The 10 Best Skin-Care Tips of All Time, According to Dermatologists
             </h2>
+            <h3 class="post-subtitle">
+              These aren't your run-of-the-mill skin-care tricks. Here, the experts share the rules they've learned and recommended throughout their careers.
+            </h3>
           </a>
-          <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
-            on September 18, 2019</p>
+    
         </div>
         <hr>
-        <div class="post-preview">
+        <!--<div class="post-preview">
           <a href="post.html">
             <h2 class="post-title">
               Science has not yet mastered prophecy
@@ -130,12 +140,84 @@
         </div>
         <hr>
         <!-- Pager -->
-       <!-- <div class="clearfix">
+       <!--<div class="clearfix">
           <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
         </div>
       </div>
     </div>
   </div> -->
+    <!-- Page Content -->
+<div class="container">
+
+  <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0"><h2 class="section-heading">More Tips</h2></h1>
+
+  <hr class="mt-2 mb-5">
+
+  <div class="row text-center text-lg-left">
+
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="img/t1.jpg" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="img/t1.jpg" alt=""style="width:200px;height:150px;">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="img/t10.jpg">
+            <img class="img-fluid img-thumbnail" src="img/t10.jpg" alt=""style="width:200px;height:150px;">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="img/t3.jpg" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="img/t3.jpg" alt=""style="width:200px;height:150px;">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="img/t4.jpg" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="img/t4.jpg" alt=""style="width:200px;height:150px;">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="img/t5.jpg" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="img/t5.jpg" alt=""style="width:200px;height:150px;">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="img/t6.jpg" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="img/t6.jpg" alt=""style="width:200px;height:150px;">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="img/t7.jpg" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="img/t7.jpg" alt=""style="width:200px;height:150px;">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="img/t8.jpg" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="img/t8.jpg" alt=""style="width:200px;height:150px;">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="img/t12.jpg" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="img/t12.jpg" alt=""style="width:200px;height:150px;">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="img/t11.jpg" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="img/t11.jpg" alt=""style="width:200px;height:150px;">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="img/t9.jpg" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="img/t9.jpg" alt=""style="width:200px;height:150px;">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="img/t13.jpg" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="img/t13.jpg" alt=""style="width:200px;height:150px;">
+          </a>
+    </div>
+  </div>
+
+</div>
 
   <hr>
 
@@ -146,7 +228,7 @@
         <div class="col-lg-8 col-md-10 mx-auto">
           <ul class="list-inline text-center">
             <li class="list-inline-item">
-              <a href="http://www.twitter.com">
+              <a href="https://twitter.com/Z_Care_vet">
                 <span class="fa-stack fa-lg">
                   <i class="fas fa-circle fa-stack-2x"></i>
                   <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
@@ -154,7 +236,7 @@
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="http://www.facebook.com">
+              <a href="https://www.facebook.com/Zcare14/">
                 <span class="fa-stack fa-lg">
                   <i class="fas fa-circle fa-stack-2x"></i>
                   <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
@@ -162,15 +244,15 @@
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="http://www.github.com">
+              <a href="https://instagram.com/zcare2019?igshid=zyzt8vbr9ko1">
                 <span class="fa-stack fa-lg">
                   <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
                 </span>
               </a>
             </li>
           </ul>
-          <p class="copyright text-muted">Copyright &copy; zcare 2019</p>
+          <p class="copyright text-muted">Copyright &copy; z-care 2019</p>
         </div>
       </div>
     </div>
@@ -179,9 +261,16 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-firestore.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script> 
 
   <!-- Custom scripts for this template -->
   <script src="js/clean-blog.min.js"></script>
+   <script src="f.js"></script>
+	 <script src="logout.js"></script>
 
 </body>
 
