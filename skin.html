@@ -22,7 +22,9 @@
   <link href="css/clean-blog.min.css" rel="stylesheet">
 
 	 <link rel="stylesheet" href="style1.css">
+	 
     <link rel="stylesheet" type="text/css" href="site1.css">
+	 <link rel="stylesheet" href="modal.css">
 
 </head>
 
@@ -90,10 +92,10 @@
       <!-- Project One -->
       <div class="row">
         <div class="col-md-7">
-          <a href="#">
+         <!-- <a href="img/almond.jpg">-->
             <img class="img-fluid rounded mb-3 mb-md-0" src="img/almond.jpg" alt="" style="width:700px;height:300px;">
 			
-          </a>
+          <!--</a>-->
         </div>
         <div class="col-md-5">
           <h3>Cleanse Your Skin With Almond Oil</h3>
@@ -102,25 +104,55 @@
 </style>
          <p>
 Switch from bar to liquid soap that doesn’t lather. Instead of stripping your skin with foamy cleansers, nourish your skin while you cleanse for a healthy clean glow. You can use oils such as argan and almond oil<span id="dots">...</span><span id="more">  to cleanse the skin naturally or use a natural cleanser. </p>
-           <button onclick="myFunction()" id="myBtn">Read more</button>
-		  <a class="btn btn-primary" href="img/almond.jpg">View</a>
-		  <script>
-function myFunction() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
+           <button onclick="myFunction()" style="width:35%" id="myBtn">Read more</button>
+		  <!--<a class="btn btn-primary" href="img/almond.jpg">View</a>-->
+		   <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Comment</button>
 
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more"; 
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less"; 
-    moreText.style.display = "inline";
-  }
+<div id="id01" class="modal">
+  
+ <!-- <form class="modal-content animate" action="/action_page.php" method="post">-->
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <!--<img src="img_avatar2.png" alt="Avatar" class="avatar">-->
+    </div>
+
+   
+<div class="contact">
+        <h3>Leave a comment</h3>
+         <div class="alert"></div>
+        <form id="contactForm">
+          <p>
+            <label>Name</label>
+            <input type="text" name="name" style="width:75%" id="name" required>
+          </p>
+    
+          <p class="full">
+            <label>Comment</label>
+            <textarea name="message" rows="3" style="width:75%" id="message"></textarea>
+          </p>
+          <p class="full">
+            <button type="submit" style="width:75%">Submit</button>
+          </p>
+		    <p class="full">
+            <button type="reset" style="width:75%">Reset</button>
+          </p>
+		      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        </form>
+      </div>
+	  </div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
 }
 </script>
+
         </div>
       </div>
       <!-- /.row -->
@@ -130,9 +162,9 @@ function myFunction() {
       <!-- Project Two -->
       <div class="row">
         <div class="col-md-7">
-          <a href="#">
+         <!-- <a href="img/alovera.jpg">-->
             <img class="img-fluid rounded mb-3 mb-md-0" src="img/alovera.jpg" alt="" style="width:700px;height:300px;">
-          </a>
+          <!--</a>-->
         </div>
         <div class="col-md-5">
           <h3>Use Aloe Vera To Transform Red Irritated Skin Into Soft Healthly Skin</h3>
@@ -141,26 +173,56 @@ function myFunction() {
 #more2 {display: none;}
 </style>
            <p>If your skin is red and irritated, you’ll want to soothe it right away. Prolonged inflammation of your skin can cause your skin to break down collagen. Or,<span id="dots2">...</span><span id="more2"> if you just want smooth, vibrant skin, you can also use this skin soother. Aloe Vera gel has antimicrobial, anti-inflammatory and healing properties, and it penetrates the skin easily to provide nourishment.</p>
-		   <button onclick="myFunction2()" id="myBtn2">Read more</button>
-		  <a class="btn btn-primary" href="img/alovera.jpg">View</a>
+		   <button onclick="myFunction2()" style="width:35%" id="myBtn2">Read more</button>
+		 <!-- <a class="btn btn-primary" href="img/alovera.jpg">View</a>-->
 		  
-		    <script>
-function myFunction2() {
-  var dots = document.getElementById("dots2");
-  var moreText = document.getElementById("more2");
-  var btnText = document.getElementById("myBtn2");
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Comment</button>
 
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more"; 
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less"; 
-    moreText.style.display = "inline";
-  }
+<div id="id02" class="modal">
+  
+ <!-- <form class="modal-content animate" action="/action_page.php" method="post">-->
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <!--<img src="img_avatar2.png" alt="Avatar" class="avatar">-->
+    </div>
+
+   
+<div class="contact">
+        <h3>Leave a comment</h3>
+         <div class="alert"></div>
+        <form id="contactForm">
+          <p>
+            <label>Name</label>
+            <input type="text" name="name" style="width:75%" id="name" required>
+          </p>
+    
+          <p class="full">
+            <label>Comment</label>
+            <textarea name="message" rows="3" style="width:75%" id="message"></textarea>
+          </p>
+          <p class="full">
+            <button type="submit" style="width:75%">Submit</button>
+          </p>
+		    <p class="full">
+            <button type="reset" style="width:75%">Reset</button>
+          </p>
+		      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+        </form>
+      </div>
+	  </div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
 }
 </script>
+		  
         </div>
       </div>
       <!-- /.row -->
@@ -170,9 +232,9 @@ function myFunction2() {
       <!-- Project Three -->
       <div class="row">
         <div class="col-md-7">
-          <a href="#">
+          <!--<a href="img/greent.jpg">-->
             <img class="img-fluid rounded mb-3 mb-md-0" src="img/greent.jpg" alt="" style="width:700px;height:300px;">
-          </a>
+          <!--</a>-->
         </div>
         <div class="col-md-5">
           <h3>Brighten Dull Skin Using Green Tea As A Toner</h3>
@@ -180,23 +242,52 @@ function myFunction2() {
 #more3 {display: none;}
 </style>
         <p>White and green teas applied topically on the skin have anti-inflammatory, brightening, evening, cleansing and hydrating properties. They’re ideal for using as a skin brightening tea toner. You can make a tea toner<span id="dots3">...</span><span id="more3"> with one or both of these teas by steeping the teas for 5 minutes, allowing them to cool to room temperature. Then, either pat onto your face, apply with cotton pads or pour into a spray bottle and spritz onto clean skin.</p>
-          <button onclick="myFunction3()" id="myBtn3">Read more</button>
-		  <a class="btn btn-primary" href="img/greent.jpg">View</a>
-        <script>
-function myFunction3() {
-  var dots = document.getElementById("dots3");
-  var moreText = document.getElementById("more3");
-  var btnText = document.getElementById("myBtn3");
+          <button onclick="myFunction3()" style="width:35%" id="myBtn3">Read more</button>
+		  <!--<a class="btn btn-primary" href="img/greent.jpg">View</a>-->
+      		 			 <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Comment</button>
 
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more"; 
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less"; 
-    moreText.style.display = "inline";
-  }
+<div id="id03" class="modal">
+  
+ <!-- <form class="modal-content animate" action="/action_page.php" method="post">-->
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <!--<img src="img_avatar2.png" alt="Avatar" class="avatar">-->
+    </div>
+
+   
+<div class="contact">
+        <h3>Leave a comment</h3>
+         <div class="alert"></div>
+        <form id="contactForm">
+          <p>
+            <label>Name</label>
+            <input type="text" name="name" style="width:75%" id="name" required>
+          </p>
+    
+          <p class="full">
+            <label>Comment</label>
+            <textarea name="message" rows="3" style="width:75%" id="message"></textarea>
+          </p>
+          <p class="full">
+            <button type="submit" style="width:75%">Submit</button>
+          </p>
+		    <p class="full">
+            <button type="reset" style="width:75%">Reset</button>
+          </p>
+		      <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Cancel</button>
+        </form>
+      </div>
+	  </div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id03');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
 }
 </script>
 		</div>
@@ -209,9 +300,9 @@ function myFunction3() {
       <div class="row">
 
         <div class="col-md-7">
-          <a href="#">
+          <!--<a href="img/rasberry.jpg">-->
             <img class="img-fluid rounded mb-3 mb-md-0" src="img/rasberry.jpg" alt="" style="width:700px;height:300px;">
-          </a>
+          <!--</a>-->
         </div>
         <div class="col-md-5">
           <h3> Use Raspberries And Coconut Oil For Brighter Lips</h3>
@@ -219,23 +310,52 @@ function myFunction3() {
 #more4 {display: none;}
 </style>
           <p>In a small saucepan on low heat, warm 1 Tablespoon coconut oil until it liquefies. Remove from heat and add 4 fresh or frozen red raspberries. Mash berries and blend until smooth. Place in a<span id="dots4">...</span><span id="more4"> small glass container and refrigerate until firm. Use clean fingers or a lipgloss brush to smooth over lips. Make this fresh every few days.</p>
-		  <button onclick="myFunction4()" id="myBtn4">Read more</button>
-		  <a class="btn btn-primary" href="img/rasberry.jpg">View</a>
-        <script>
-function myFunction4() {
-  var dots = document.getElementById("dots4");
-  var moreText = document.getElementById("more4");
-  var btnText = document.getElementById("myBtn4");
+		  <button onclick="myFunction4()" style="width:35%" id="myBtn4">Read more</button>
+		 <!-- <a class="btn btn-primary" href="img/rasberry.jpg">View</a>-->
+		 			 <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Comment</button>
 
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more"; 
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less"; 
-    moreText.style.display = "inline";
-  }
+<div id="id04" class="modal">
+  
+ <!-- <form class="modal-content animate" action="/action_page.php" method="post">-->
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id04').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <!--<img src="img_avatar2.png" alt="Avatar" class="avatar">-->
+    </div>
+
+   
+<div class="contact">
+        <h3>Leave a comment</h3>
+         <div class="alert"></div>
+        <form id="contactForm">
+          <p>
+            <label>Name</label>
+            <input type="text" name="name" style="width:75%" id="name" required>
+          </p>
+    
+          <p class="full">
+            <label>Comment</label>
+            <textarea name="message" rows="3" style="width:75%" id="message"></textarea>
+          </p>
+          <p class="full">
+            <button type="submit" style="width:75%">Submit</button>
+          </p>
+		    <p class="full">
+            <button type="reset" style="width:75%">Reset</button>
+          </p>
+		      <button type="button" onclick="document.getElementById('id04').style.display='none'" class="cancelbtn">Cancel</button>
+        </form>
+      </div>
+	  </div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id04');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
 }
 </script>
 	   </div>
@@ -243,7 +363,7 @@ function myFunction4() {
       <!-- /.row -->
 
       <hr>
-	  	   <div class="contact">
+	  	 <!--  <div class="contact">
         <h3>Leave a comment</h3>
          <div class="alert"></div>
         <form id="contactForm">
@@ -265,22 +385,24 @@ function myFunction4() {
 		  
         </form>
       </div>
-	  <hr>
+	  <hr>-->
 
 
 	  
 	  
 	  <section>
-<h2> Comment Section</h2>
+	    <a class="link" href="register.html" id="cse" onclick="showTable()" align="center">Sign up to explore more</a>
+<!--<h2> Comment Section</h2>
 <!--<p><b>Retreived messages:</b></p>-->
 
 
 
 <table class="tablePlace" id="table-places-hair">
+
 <thead>
 <tr>
-    <td  class="name-col name-col-header">Name</td>
-	<td  class="name-col name-col-header">Comment</td>
+    <td  class="name-col name-col-header" style="width:70px">Name</td>
+	<td  class="name-col name-col-header"style="width:70px">Comment</td>
 		
 	
 <!--<td> <p>Name: <strong id="name1"></strong></p>
@@ -358,6 +480,7 @@ function myFunction4() {
   <script src="js/clean-blog.min.js"></script>
   <!--<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>-->
   <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script> 
+   <script src="readmore.js"></script>
    <script src="skin.js"></script>
     <script src="skincomment.js"></script>
 	 <script src="logout.js"></script>

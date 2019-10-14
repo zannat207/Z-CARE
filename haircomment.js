@@ -1,5 +1,4 @@
 
- 
 
 
 // Reference messages collection
@@ -17,6 +16,7 @@ messagesRef.on("child_added",snap=> {
 			//document.getElementById("message").innerHTML=message;
 	
 });
+
 
 /*var commentsRef = firebase.database().ref('post-comments/' + messages1);
 commentsRef.on('child_added', function(data) {

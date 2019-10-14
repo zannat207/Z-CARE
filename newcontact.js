@@ -47,7 +47,7 @@ function submitForm(e){
   //redirect to home page
 
   setTimeout(function(){
-    document.location.href="./contactret.html";
+    document.location.href="./contact.html";
   },3050);
 
   
@@ -69,3 +69,26 @@ function saveMessage(name, company, email, phone, message){
     message:message
   });
 }
+
+
+
+firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    console.log(user.uid);
+    if (user.uid == "guOhVelad5M740JqlFLJN0NLV7w2") {
+     document.getElementById('showtable').style.display='block';
+    } else {
+      document.getElementById('showtable').style.display='none';
+    }
+	  
+  }
+else {
+      document.getElementById('showtable').style.display='none';
+}
+});
+
+var refUser = "admin";
+var userRef = firebase.database().ref(refUser);
+
+
+

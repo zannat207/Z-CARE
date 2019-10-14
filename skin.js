@@ -63,3 +63,37 @@ function saveMessage(name, message){
     message:message
   });
 }
+
+/*firebase.auth().onAuthStateChanged(function (user) {
+  if (user) {
+    console.log("logged in");
+   // document.getElementById('table-places-hair').style.display='block';
+	    document.getElementById('#table_body_hair').style.display='block';
+    document.getElementById('cse').style.display='none';
+  } else {
+    console.log("logged out");
+    document.getElementById('table-places-hair').style.display='none';
+	// document.getElementById('#table_body_hair').style.display='none';
+   document.getElementById('cse').style.display='block';
+  }
+});*/
+
+
+firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    console.log(user.uid);
+    if (user.uid != null) {
+     document.getElementById('table-places-hair').style.display='block';
+	  document.getElementById('cse').style.display='none';
+    } else {
+      document.getElementById('table-places-hair').style.display='none';
+	   document.getElementById('cse').style.display='block';
+    }
+	  
+  }
+else {
+      document.getElementById('table-places-hair').style.display='none';
+	   document.getElementById('cse').style.display='block';
+    
+}
+});

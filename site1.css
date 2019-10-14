@@ -101,6 +101,7 @@
 .tablePlace td {
     border: 3px solid #4b7e9c;
     padding: 8px;
+	  width: 800px;
     text-align: center;
     background-color: #ffffff
 }

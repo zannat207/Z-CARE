@@ -63,3 +63,22 @@ function saveMessage(name, message){
     message:message
   });
 }
+
+firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    console.log(user.uid);
+    if (user.uid != null) {
+     document.getElementById('table-places-hair').style.display='block';
+	  document.getElementById('cse').style.display='none';
+    } else {
+      document.getElementById('table-places-hair').style.display='none';
+	   document.getElementById('cse').style.display='block';
+    }
+	  
+  }
+else {
+      document.getElementById('table-places-hair').style.display='none';
+	   document.getElementById('cse').style.display='block';
+    
+}
+});

@@ -8,14 +8,15 @@ body{
   line-height:1.6;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding:0;
+ 
 }
 
-.container{
+/*.container{
   max-width:1170px;
   margin-left:auto;
   margin-right:auto;
   padding:1em;
-}
+}*/
 
 ul{
   list-style: none;
@@ -72,12 +73,12 @@ ul{
 
 .contact form button, .contact form input, .contact form textarea{
   width:100%;
-  padding:1em;
+  padding:0.5em;
   border:1px solid #799dab;
 }
 
 .contact form button{
-  background:#799dab;
+  background:#276e8a;
   border:0;
   text-transform: uppercase;
 }

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+
+#ninja-slider .caption {
+    position:absolute;
+    top:100%;
+}
+#ninja-slider .slider-inner {padding-bottom: 100px!important;}
+#ninja-slider li {margin-bottom: 100px!important;}
+#ninja-slider ul {overflow:visible!important;}
+#ninja-slider li {/*overflow:hidden;*/}
+</style>
+
+<div class="gallery">
+    <img src="img/t1.jpg" onclick="lightbox(0)" style="width:auto; height:140px;" >
+    <img src="img/t10.jpg" onclick="lightbox(1)" style="width:auto; height:140px;" >
+    <img src="img/t3.jpg" onclick="lightbox(2)" >
+    <img src="img/t4.jpg" onclick="lightbox(3)" >
+    <img src="img/t5.jpg" onclick="lightbox(4)" >
+</div>
+<div style="display:none;">
+    <div id="ninja-slider">...(omitted for brevity)...</div>
+</div>
+<script>
+    function lightbox(idx) {
+        //Show the slider wrapper
+        var ninjaSldr = document.getElementById("ninja-slider");
+        ninjaSldr.parentNode.style.display = "block";
+
+        //Then init the slider
+        //Note: The { initSliderByCallingInitFunc: true } option in the 
+        // ninja-slider.js tells the page not to initiate the slider
+        // unless the following init(idx) function is called.
+        nslider.init(idx);
+
+        //Then mimic clicking the fullscreen button to popup the modal
+        var fsBtn = document.getElementById("fsBtn");
+        fsBtn.click();
+    }
+
+    function fsIconClick(isFullscreen, ninjaSldr) {
+        //Note: fsIconClick is the default event handler of the fullscreen button
+        if (isFullscreen) {
+            ninjaSldr.parentNode.style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>

@@ -20,10 +20,8 @@
 
   <!-- Custom styles for this template -->
   <link href="css/clean-blog.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style1.css">
+   <link rel="stylesheet" href="style1.css">
     <link rel="stylesheet" type="text/css" href="site1.css">
-
-	  <link rel="stylesheet" href="modal.css">
 	 <!--<link rel="stylesheet" type="text/css" href="box.css">-->
    
 
@@ -95,10 +93,10 @@
       <!-- Project One -->
       <div class="row">
         <div class="col-md-7">
-          <!--<a href="img/greentea.jpg">-->
+          <a href="#">
             <img class="img-fluid rounded mb-3 mb-md-0" src="img/greentea.jpg" alt="" style="width:700px;height:300px;">
 			
-          <!--</a>-->
+          </a>
         </div>
         <div class="col-md-5">
           <h3>Use As Much Green Tea On Your Hair As Possible</h3>
@@ -107,52 +105,26 @@
 </style>
           
 		  <p>Green tea contains EGCG, an antioxidant which is great for the health of hair follicles and dermal papilla cells, contributing to lesser hair loss and thinning. Other benefits include the treatment of dandruff and psoriasis. Scaly and flaky skin on the scalp<span id="dots">...</span><span id="more"> can be treated with green tea, which regulates the scalp’s protein levels, nourished, hydrates and moustirises. You can use shampoos with green tea, or even just massage a freshly brewed and cooled cup of green tea onto the hair. This magic ingredient is also good for the hair, and when used in a conditioner or as a final hair rinse, makes your hair softer, smoother, more nourished, and lesser prone to split ends .</span></p>
-		  	 <button onclick="myFunction()" style="width:35%" id="myBtn">Read more</button>
-			 <!--<a class="btn btn-primary" href="img/greentea.jpg">View</a>-->
-			 <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Comment</button>
+		  	 <button onclick="myFunction()" id="myBtn">Read more</button>
+			 <a class="btn btn-primary" href="img/greentea.jpg">View</a>
 
-<div id="id01" class="modal">
-  
- <!-- <form class="modal-content animate" action="/action_page.php" method="post">-->
-    <div class="imgcontainer">
-      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <!--<img src="img_avatar2.png" alt="Avatar" class="avatar">-->
-    </div>
 
-   
-<div class="contact">
-        <h3>Leave a comment</h3>
-         <div class="alert"></div>
-        <form id="contactForm">
-          <p>
-            <label>Name</label>
-            <input type="text" name="name" style="width:75%" id="name" required>
-          </p>
-    
-          <p class="full">
-            <label>Comment</label>
-            <textarea name="message" rows="3" style="width:75%" id="message"></textarea>
-          </p>
-          <p class="full">
-            <button type="submit" style="width:75%">Submit</button>
-          </p>
-		    <p class="full">
-            <button type="reset" style="width:75%">Reset</button>
-          </p>
-		      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-        </form>
-      </div>
-	  </div>
 
 <script>
-// Get the modal
-var modal = document.getElementById('id01');
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
 }
 </script>
         </div>
@@ -164,9 +136,9 @@ window.onclick = function(event) {
       <!-- Project Two -->
       <div class="row">
         <div class="col-md-7">
-          <!--<a href="img/oil.jpg">-->
+          <a href="#">
             <img class="img-fluid rounded mb-3 mb-md-0" src="img/oil.jpg" alt="" style="width:700px;height:300px;">
-          <!--</a>-->
+          </a>
         </div>
         <div class="col-md-5">
           <h3>Apply Oil On The Hair</h3>
@@ -180,57 +152,27 @@ window.onclick = function(event) {
 
 		  
 		  Tip: Choose a natural oil based on your need and hair type , and massage well into scalp and hair for optimum hair health.</span></p>
-		  <button onclick="myFunction2()"  style="width:35%" id="myBtn2">Read more</button>
+		  <button onclick="myFunction2()" id="myBtn2">Read more</button>
 		  
-		  <!--<a class="btn btn-primary" href="img/oil.jpg">View</a>-->
-		  			 <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Comment</button>
+		  <a class="btn btn-primary" href="img/oil.jpg">View</a>
+		  
+		  <script>
+function myFunction2() {
+  var dots = document.getElementById("dots2");
+  var moreText = document.getElementById("more2");
+  var btnText = document.getElementById("myBtn2");
 
-<div id="id02" class="modal">
-  
- <!-- <form class="modal-content animate" action="/action_page.php" method="post">-->
-    <div class="imgcontainer">
-      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <!--<img src="img_avatar2.png" alt="Avatar" class="avatar">-->
-    </div>
-
-   
-<div class="contact">
-        <h3>Leave a comment</h3>
-         <div class="alert"></div>
-        <form id="contactForm">
-          <p>
-            <label>Name</label>
-            <input type="text" name="name" style="width:75%" id="name" required>
-          </p>
-    
-          <p class="full">
-            <label>Comment</label>
-            <textarea name="message" rows="3" style="width:75%" id="message"></textarea>
-          </p>
-          <p class="full">
-            <button type="submit" style="width:75%">Submit</button>
-          </p>
-		    <p class="full">
-            <button type="reset" style="width:75%">Reset</button>
-          </p>
-		      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
-        </form>
-      </div>
-	  </div>
-
-<script>
-// Get the modal
-var modal = document.getElementById('id02');
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
 }
 </script>
-		  
-
         </div>
       </div>
       <!-- /.row -->
@@ -240,9 +182,9 @@ window.onclick = function(event) {
       <!-- Project Three -->
       <div class="row">
         <div class="col-md-7">
-         <!-- <a href="img/onion.jpg">-->
+          <a href="#">
             <img class="img-fluid rounded mb-3 mb-md-0" src="img/onion.jpg" alt="" style="width:700px;height:300px;">
-          <!--</a>-->
+          </a>
         </div>
         <div class="col-md-5">
           <h3>Apply onion juice all over your hair</h3>
@@ -253,55 +195,25 @@ window.onclick = function(event) {
 
 Tip: Squeeze the juice of three onions and apply all over scalp and hair to replenish sulphur and protein levels. Leave on for five minutes, and then rinse.</span></p>
          
-<button onclick="myFunction3()" style="width:35%" id="myBtn3">Read more</button>
-		 <!--<a class="btn btn-primary" href="img/onion.jpg">View</a>-->
-		 			 <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Comment</button>
-
-<div id="id03" class="modal">
-  
- <!-- <form class="modal-content animate" action="/action_page.php" method="post">-->
-    <div class="imgcontainer">
-      <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <!--<img src="img_avatar2.png" alt="Avatar" class="avatar">-->
-    </div>
-
-   
-<div class="contact">
-        <h3>Leave a comment</h3>
-         <div class="alert"></div>
-        <form id="contactForm">
-          <p>
-            <label>Name</label>
-            <input type="text" name="name" style="width:75%" id="name" required>
-          </p>
-    
-          <p class="full">
-            <label>Comment</label>
-            <textarea name="message" rows="3" style="width:75%" id="message"></textarea>
-          </p>
-          <p class="full">
-            <button type="submit" style="width:75%">Submit</button>
-          </p>
-		    <p class="full">
-            <button type="reset" style="width:75%">Reset</button>
-          </p>
-		      <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Cancel</button>
-        </form>
-      </div>
-	  </div>
-
+<button onclick="myFunction3()" id="myBtn3">Read more</button>
+		 <a class="btn btn-primary" href="img/onion.jpg">View</a>
 <script>
-// Get the modal
-var modal = document.getElementById('id03');
+function myFunction3() {
+  var dots = document.getElementById("dots3");
+  var moreText = document.getElementById("more3");
+  var btnText = document.getElementById("myBtn3");
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
 }
 </script>
-
         </div>
       </div>
       <!-- /.row -->
@@ -312,9 +224,9 @@ window.onclick = function(event) {
       <div class="row">
 
         <div class="col-md-7">
-         <!-- <a href="img/amla.jpg">-->
+          <a href="#">
             <img class="img-fluid rounded mb-3 mb-md-0" src="img/amla.jpg" alt="" style="width:700px;height:300px;">
-         <!-- </a>-->
+          </a>
         </div>
         <div class="col-md-5">
           <h3> Apply a paste of crushed amala for hair care</h3>
@@ -323,62 +235,32 @@ window.onclick = function(event) {
 </style>
           <p>The humble amala or Indian gooseberry is a miracle fruit, and is often included in hair products, hair tonics and medical streams. Vitamin C in amala helps produce collagen protein, which boosts cell regeneration, stimulates both hair<span id="dots4">...</span><span id="more4"> length and volume. Amala contains over 80 percent moisture, and so has hydrating properties. It is a natural scalp cleanser, removes germs, and is also an antioxidant, preventing hair greying and damage.
           Tip: Crush 3-4 amala (gooseberries) in a bowl, and apply the pulp with the juice all over the hair and scalp, for optimum benefit.<span></p>
-		 <button onclick="myFunction4()" style="width:35%" id="myBtn4">Read more</button>
-		<!-- <a class="btn btn-primary" href="img/amla.jpg">View</a>-->
-		 			 <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Comment</button>
+		 <button onclick="myFunction4()" id="myBtn4">Read more</button>
+		 <a class="btn btn-primary" href="img/amla.jpg">View</a>
+		 <script>
+function myFunction4() {
+  var dots = document.getElementById("dots4");
+  var moreText = document.getElementById("more4");
+  var btnText = document.getElementById("myBtn4");
 
-<div id="id04" class="modal">
-  
- <!-- <form class="modal-content animate" action="/action_page.php" method="post">-->
-    <div class="imgcontainer">
-      <span onclick="document.getElementById('id04').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <!--<img src="img_avatar2.png" alt="Avatar" class="avatar">-->
-    </div>
-
-   
-<div class="contact">
-        <h3>Leave a comment</h3>
-         <div class="alert"></div>
-        <form id="contactForm">
-          <p>
-            <label>Name</label>
-            <input type="text" name="name" style="width:75%" id="name" required>
-          </p>
-    
-          <p class="full">
-            <label>Comment</label>
-            <textarea name="message" rows="3" style="width:75%" id="message"></textarea>
-          </p>
-          <p class="full">
-            <button type="submit" style="width:75%">Submit</button>
-          </p>
-		    <p class="full">
-            <button type="reset" style="width:75%">Reset</button>
-          </p>
-		      <button type="button" onclick="document.getElementById('id04').style.display='none'" class="cancelbtn">Cancel</button>
-        </form>
-      </div>
-	  </div>
-
-<script>
-// Get the modal
-var modal = document.getElementById('id04');
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
 }
 </script>
-
         </div>
       </div>
       <!-- /.row -->
 
       <hr>
 	  
-	  <!-- <div class="contact">
+	   <div class="contact">
         <h3>Leave a comment</h3>
          <div class="alert"></div>
         <form id="contactForm">
@@ -400,25 +282,19 @@ window.onclick = function(event) {
 		  
         </form>
       </div>
-	  <hr>-->
-
-
-
-
-	  
-	
+	  <hr>
 
 
 	  
 	  
 	  <section>
+<h2> Comment Section</h2>
+<!--<p><b>Retreived messages:</b></p>-->
 
-  <a class="link" href="register.html" id="cse" align="center">Sign up to explore more</a>
+
 
 <table class="tablePlace" id="table-places-hair">
-
 <thead>
-
 <tr>
     <td  class="name-col name-col-header">Name</td>
 	<td  class="name-col name-col-header">Comment</td>
@@ -430,7 +306,6 @@ window.onclick = function(event) {
 	</tr>
 </thead>
 <tbody id="table_body_hair">
-<!--<h2> Comment Section</h2>-->
 </tbody>
 </table>
 </section>
@@ -492,13 +367,9 @@ window.onclick = function(event) {
 
   <!-- Custom scripts for this template -->
   <script src="js/clean-blog.min.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script> 
-    <script src="readmore.js"></script>
    <script src="hair.js"></script>
-  
     <script src="haircomment.js"></script>
 	 <script src="logout.js"></script>
 
