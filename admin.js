@@ -18,7 +18,7 @@
 firebase.auth().onAuthStateChanged((user) => {
   if (user) {
     console.log(user.uid);
-    if (user.uid == "guOhVelad5M740JqlFLJN0NLV7w2") {
+    if (user.uid == "43kyPT01REZ3fSffaC1J79mNJwm2") {
       createTable();
     } else {
       document.location.href = "./contact.html?invalid_action_from_inbox";
